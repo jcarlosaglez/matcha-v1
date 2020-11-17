@@ -301,6 +301,10 @@ header {
 }
 
 /* others */
+.others {
+    margin-bottom: 60px;
+}
+
 .others .item {
     width: auto;
     height: 300px;
@@ -372,12 +376,117 @@ header {
 }
 
 
+/* footer */
+footer .info-footer {
+    padding: 50px 35px;
+    background: #025157;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
 
+footer .info-footer div {
+    margin-bottom: 25px;
+}
 
+footer .info-footer div h3 {
+    line-height: 1.16;
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
 
+footer .info-footer div p a {
+    text-decoration: none;
+    color: greenyellow;
+}
 
+footer .info-footer .get-started button {
+    background-color: #67b54b;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 24px;
+    color: white;
+    margin-bottom: 15px;
+}
 
+footer .info-footer .get-started p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #c8c8c8;
+}
 
+footer .links {
+    text-align: center;
+}
+
+footer .links .suscribe {
+    margin-bottom: 60px;
+}
+
+footer .links .suscribe h3 {
+    margin: 20px;
+}
+
+footer .links .suscribe p {
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer .links .suscribe form input {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #025157;
+    color: #025157;
+}
+
+footer .links .suscribe form button {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #025157;
+}
+
+.links .products,
+.links .matcha,
+.links .resources {
+    margin-bottom: 60px;
+}
+
+.links .products ul,
+.links .matcha ul,
+.links .resources ul {
+    list-style: none;
+}
+
+footer .end {
+    text-align: center;
+}
+
+footer .end .icons img {
+    margin-bottom: 30px;
+}
+
+footer .end .icons .icon-items img {
+    width: 20px;
+    margin-bottom: 30px;
+}
+
+footer .end .icons .icon-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .end .icons .icon-items img:last-child {
+    width: 70px;
+}
+
+footer .end .icons p {
+    margin-bottom: 30px;
+}
 
 
 
@@ -464,6 +573,27 @@ header {
 
     .others .item {
         margin: 0;
+    }
+
+    /* footer */
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .info-footer {
+        width: 720px;
+    }
+
+    .links span {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer .links .suscribe h3 {
+        margin: 0 0 20px;
     }
 }
 
@@ -620,5 +750,51 @@ header {
 
     .cases .info h1 {
         font-size: 55px;
+    }
+
+    /* footer */
+    footer .info-footer,
+    footer .links,
+    footer .end {
+        width: 1340px;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links .suscribe {
+        width: 40%;
+        text-align: left;
+    }
+
+    .links span {
+        width: 50%;
+    }
+
+    .end {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .end .icons {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .end .icons img {
+        margin: 0;
+    }
+
+    .end .icon-items {
+        width: 50%;
+        justify-content: space-between;
+    }
+    footer .end .icons .icon-items img {
+        margin: 0;
     }
 }
