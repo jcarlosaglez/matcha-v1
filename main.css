@@ -225,7 +225,79 @@ header {
     max-width: 40px;
 }
 
+/* cases */
+.cases {
+    display: flex;
+    flex-direction: column;
+}
+ .cases .testimonials {
+     order: 2;
+ }
 
+.cases .info {
+    order: 1;
+}
+
+.info h1 {
+    color: #025157;
+    line-height: 32px;
+    font-size: 30px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
+.info button {
+    background: #025157;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.testimonials .item-card {
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0,0,0,.11);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.testimonials .item-card .testimonial-img{
+    background-image: url(https://getmatcha.com/wp-content/uploads/2020/09/0-1-150x150-1.jpeg);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testimonials .item-card h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #025157;
+}
+
+.testimonials .item-card h2 {
+    line-height: 26px;
+    font-size: 28px;
+    letter-spacing: -2px;
+    margin: 15px 0;
+}
+
+.testimonials .item-card p {
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: -.5px;
+    margin-bottom: 30px;
+}
+
+.testimonials .item-card button {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    background: #025157;
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+}
 
 
 /* Media */
@@ -244,6 +316,17 @@ header {
         letter-spacing: -3px;
         font-weight: bold;
         color: #025157;
+    }
+
+    /* cases */
+    .testimonials .item-card {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .info h1 {
+        font-size: 38px;
+        line-height: 1.2;
     }
 }
 
@@ -423,5 +506,23 @@ header {
     /* tools */
     .tools .items {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .cases {
+        flex-direction: row;
+    }
+
+    .cases .testimonials{
+        order: 1;
+        flex: 1;
+    }
+
+    .cases .info {
+        order: 2;
+        flex: 2;
+    }
+
+    .cases .info h1 {
+        font-size: 55px;
     }
 }
