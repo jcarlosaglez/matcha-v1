@@ -35,6 +35,7 @@ header {
     margin: 0 auto;
     padding: 0 15px;
     background-color: white;
+    z-index: 10;
 }
 
 .logo {
@@ -299,6 +300,86 @@ header {
     border: 1px solid transparent;
 }
 
+/* others */
+.others .item {
+    width: auto;
+    height: 300px;
+    margin: 45px 20px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.others .feature-1 {
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/blocks/masters.jpg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.others .feature-2 {
+    background-color: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.others .feature-2-inf{
+    width: 50%;
+}
+
+.others .feature-2-img{
+    display: flex;
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.others .feature-2-img img{
+    width: 190px;
+}
+
+.others .feature-2-img img:first-child{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.others .feature-2-img img:last-child{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.others .feature-3 {
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/gfx/blocks/texture.jpg);
+    background-repeat: no-repeat;
+    background-color: #fade82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.others .feature-4 {
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/gfx/blocks/toolkit.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #035157;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Media */
 @media (min-width: 576px) {
@@ -319,6 +400,10 @@ header {
     }
 
     /* cases */
+    .cases {
+        margin-bottom: 60px;
+    }
+
     .testimonials .item-card {
         width: 75%;
         margin: 0 auto;
@@ -368,6 +453,17 @@ header {
     .tools .title h2{
         font-size: 36px;
         line-height: 1;
+    }
+
+    /* others */
+    .others {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 30px;
+    }
+
+    .others .item {
+        margin: 0;
     }
 }
 
