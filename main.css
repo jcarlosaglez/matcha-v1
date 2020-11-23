@@ -1,48 +1,371 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'IBM Plex Sans', Arial,sans-serif;
-    background-color: white;
-    color: #4a4a4a;
+body {
+    font-family: 'IBM Plex Sans', Arial ,sans-serif;
+    font-weight: 400;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 1.5;
+    color: #4a4a4a;
+    background-color: #fff;
 }
 
-.container {
+header.container-fluid {
+    padding: 0;
+}
+
+nav.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand img{
+    width: 112px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    color: #025157;
+}
+
+.navbar-toggler img {
+    width: 30px;
+}
+
+.dropdown-item a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    color: #67b54b;
+}
+
+.dropdown-item .item-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.actions a {
+    color: inherit;
+}
+
+.actions button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1em;
+    padding: 15px 20px;
+    color: #fff;
+    background: #025157;
+    border-radius: 8px;
+}
+
+
+.main-wrapper {
+    margin: 30px 0;
+}
+
+.home-intro {
+    margin-bottom: 120px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.free-trial > *{
+    margin-bottom: 20px;
+}
+
+.free-trial img {
+    width: 160px;
+}
+
+.intro button {
+    border-radius: 5px;
+    padding: 10px 24px;
+    color: white;
+    background-color: #67b54b;
+}
+
+.intro p:last-child {
+    font-size: 14px;
+}
+
+.video video {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
+.brands {
+    text-align: center;
+}
+
+.brands img {
+    margin: 20px;
+}
+
+.top-features {
+    margin-bottom: 120px;
+}
+
+.TFeature .image {
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.TFeature .image img:hover {
+    transform: scale(1.03) rotate(.3deg);
+}
+
+
+.tools {
+    margin-bottom: 120px;
+}
+
+.tools-container {
+    display: grid;
+}
+
+
+.cases {
+    margin-bottom: 120px;
+}
+
+.cases .row {
+    margin: 0;
+}
+
+.cases .info .button button {
+    padding: 12px 20px;
+    color: white;
+    background-color: #025157;
+}
+
+.card-body button {
+    color: white;
+    padding: 12px 20px;
+    background-color: #025157;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+.others .row .other-1,
+.others .row .other-2,
+.others .row .other-3,
+.others .row .other-4 {
+    height: 300px;
+    overflow: hidden;
+}
+
+.others {
+    margin-bottom: 120px;
+}
+
+.others .row .other-1 > div {
+    background-image: url(img/ot-01.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.others .row .other-2 > div {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.other-2 .other-info {
+    font-size: 14px;
+}
+
+.other-2 .other-img {
+    right: 0;
+}
+
+.other-2 .other-img img {
+    width: 190px;
+    z-index: -1;
+}
+
+.others .row .other-3 > div {
+    background-image: url(img/ot-03.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #fade82;;
+}
+
+.others .row .other-4 > div {
+    background-image: url(img/ot-04.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    background-position: 130% 44%;
+    background-color: #035157;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.others .row .other-4 > div p {
+    line-height: 1;
+}
+
+
+footer .top-footer {
+    background-color: #025157;
+    padding: 45px 30px;
+    margin: 0;
+}
+
+.top-footer .info h2 {
+    line-height: .9;
+}
+
+.top-footer .get-started button {
+    padding: 12px 24px;
+}
+
+.top-footer .get-started p {
+    font-size: 12px;
+}
+
+.middle-footer .suscribe {
+    text-align: center;
+}
+
+.middle-footer .suscribe .input-group div button {
+    background-color: #025157;
+}
+
+.links div ul {
+    padding: 0;
+}
+
+.links > div {
+    text-align: center;
+} 
+
+.links div ul li {
+    list-style: none;
+}
+
+.links div ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links div ul li a:hover {
+    color: #ffc107;
+}
+
+.bottom-footer .social-icons .matcha,
+.bottom-footer .social-icons .social {
+    text-align: center;
+}
+
+.bottom-footer .social-icons .matcha img {
+    width: 150px;
+}
+
+.bottom-footer .social-icons .social img {
+    width: 25px;
+}
+
+.bottom-footer .social-icons .social img:last-child {
+    width: 70px;
+}
+
+.copyright p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
+    .links > div {
+        text-align: left;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        text-align: right;
     }
 }
 
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
+    header.container-fluid {
+        padding: 0 15px;
+    }
+    
+    nav.navbar {
+        padding: 20px;
+    }
+
+    .intro {
+        text-align: left;
+    }
+
+    .tools-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .middle-footer .suscribe {
+        text-align: left;
+    }
+
+    .bottom-footer .social-icons .matcha,
+    .bottom-footer .social-icons .social {
+        text-align: left;
     }
 }
 
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
+    footer .top-footer {
+        background-color: #025157;
+        padding: 90px 60px;
     }
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1340px;
+        max-width: 1340px !important;
+    }
+
+    header.container-fluid {
+        padding: 0 15px;
+    }
+    
+    nav.navbar {
+        padding: 20px 80px;
+    }
+
+    .navbar-brand img{
+        width: 180px;
+    }
+    .tools-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
